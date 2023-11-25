@@ -9,6 +9,13 @@ import SwiftUI
 import FirebaseAuth
 
 struct ContentView: View {
+    var body: some View {
+        LobbyView()
+    }
+}
+
+/*
+struct ContentView: View {
     @State private var isAnonymous = false
     @State private var uid = ""
 
@@ -36,6 +43,7 @@ struct ContentView: View {
         }
     }
 }
+*/
 
 /*
 #Preview {
