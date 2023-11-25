@@ -247,6 +247,8 @@ struct RoundedRectanglePlusButtonStyle: ButtonStyle {
     }
 }
 
+/*
 #Preview {
     ThreadView()
 }
+*/

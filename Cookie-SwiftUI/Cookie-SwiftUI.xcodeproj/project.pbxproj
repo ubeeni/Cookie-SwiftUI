@@ -13,6 +13,11 @@
 		10CB50942B11D3E1007BFD46 /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB50932B11D3E1007BFD46 /* ThreadView.swift */; };
 		10CB50962B11D402007BFD46 /* EnterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB50952B11D402007BFD46 /* EnterView.swift */; };
 		10CB50982B11D41A007BFD46 /* LobbyMakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB50972B11D41A007BFD46 /* LobbyMakeView.swift */; };
+		10DCB28A2B1288950006C2F9 /* CookieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DCB2892B1288950006C2F9 /* CookieAPI.swift */; };
+		10DCB28D2B128BA50006C2F9 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 10DCB28C2B128BA50006C2F9 /* CombineMoya */; };
+		10DCB28F2B128BA50006C2F9 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 10DCB28E2B128BA50006C2F9 /* Moya */; };
+		10DCB2912B128BF20006C2F9 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DCB2902B128BF10006C2F9 /* ResponseModel.swift */; };
+		10DCB2952B1290D10006C2F9 /* LobbyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DCB2922B128C6A0006C2F9 /* LobbyViewModel.swift */; };
 		AAE3780F2B11B93A000336DA /* Cookie_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE3780E2B11B93A000336DA /* Cookie_SwiftUIApp.swift */; };
 		AAE378112B11B93A000336DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE378102B11B93A000336DA /* ContentView.swift */; };
 		AAE378132B11B93C000336DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE378122B11B93C000336DA /* Assets.xcassets */; };
@@ -60,6 +65,9 @@
 		10CB50932B11D3E1007BFD46 /* ThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadView.swift; sourceTree = "<group>"; };
 		10CB50952B11D402007BFD46 /* EnterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterView.swift; sourceTree = "<group>"; };
 		10CB50972B11D41A007BFD46 /* LobbyMakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyMakeView.swift; sourceTree = "<group>"; };
+		10DCB2892B1288950006C2F9 /* CookieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieAPI.swift; sourceTree = "<group>"; };
+		10DCB2902B128BF10006C2F9 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		10DCB2922B128C6A0006C2F9 /* LobbyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewModel.swift; sourceTree = "<group>"; };
 		AAE3780B2B11B93A000336DA /* Cookie-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cookie-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE3780E2B11B93A000336DA /* Cookie_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookie_SwiftUIApp.swift; sourceTree = "<group>"; };
 		AAE378102B11B93A000336DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,11 +82,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10DCB28F2B128BA50006C2F9 /* Moya in Frameworks */,
 				AAE378562B11C732000336DA /* FirebaseMessaging in Frameworks */,
 				AAE378462B11C732000336DA /* FirebaseFirestoreCombine-Community in Frameworks */,
 				AAE3783E2B11C732000336DA /* FirebaseDatabase in Frameworks */,
 				AAE378222B11B9E9000336DA /* FirebaseAnalyticsSwift in Frameworks */,
 				AAE3785E2B11C732000336DA /* FirebaseStorage in Frameworks */,
+				10DCB28D2B128BA50006C2F9 /* CombineMoya in Frameworks */,
 				AAE3781E2B11B9E9000336DA /* FirebaseAnalytics in Frameworks */,
 				AAE3782C2B11C732000336DA /* FirebaseAnalytics in Frameworks */,
 				AAE3783C2B11C732000336DA /* FirebaseCrashlytics in Frameworks */,
@@ -112,6 +122,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10DCB2882B1288810006C2F9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				10DCB2892B1288950006C2F9 /* CookieAPI.swift */,
+				10DCB2902B128BF10006C2F9 /* ResponseModel.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		10DCB2942B128F070006C2F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				10DCB2922B128C6A0006C2F9 /* LobbyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AAE378022B11B93A000336DA = {
 			isa = PBXGroup;
 			children = (
@@ -131,8 +158,10 @@
 		AAE3780D2B11B93A000336DA /* Cookie-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				10DCB2882B1288810006C2F9 /* API */,
 				AAE3780E2B11B93A000336DA /* Cookie_SwiftUIApp.swift */,
 				AAE378102B11B93A000336DA /* ContentView.swift */,
+				10DCB2942B128F070006C2F9 /* ViewModel */,
 				10CB50912B11D398007BFD46 /* LobbyView.swift */,
 				10CB50972B11D41A007BFD46 /* LobbyMakeView.swift */,
 				10CB50952B11D402007BFD46 /* EnterView.swift */,
@@ -204,6 +233,8 @@
 				AAE3785B2B11C732000336DA /* FirebaseRemoteConfigSwift */,
 				AAE3785D2B11C732000336DA /* FirebaseStorage */,
 				AAE3785F2B11C732000336DA /* FirebaseStorageCombine-Community */,
+				10DCB28C2B128BA50006C2F9 /* CombineMoya */,
+				10DCB28E2B128BA50006C2F9 /* Moya */,
 			);
 			productName = "Cookie-SwiftUI";
 			productReference = AAE3780B2B11B93A000336DA /* Cookie-SwiftUI.app */;
@@ -235,6 +266,7 @@
 			mainGroup = AAE378022B11B93A000336DA;
 			packageReferences = (
 				AAE3781C2B11B9E9000336DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				10DCB28B2B128BA50006C2F9 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = AAE3780C2B11B93A000336DA /* Products */;
 			projectDirPath = "";
@@ -266,10 +298,13 @@
 				10CB50942B11D3E1007BFD46 /* ThreadView.swift in Sources */,
 				10CB50902B11D356007BFD46 /* UserSettingVIew.swift in Sources */,
 				AAE378622B11DBA8000336DA /* UserSettingEditView.swift in Sources */,
+				10DCB2952B1290D10006C2F9 /* LobbyViewModel.swift in Sources */,
 				10CB50922B11D398007BFD46 /* LobbyView.swift in Sources */,
 				AAED7F522B1258E7000B0465 /* InviteView.swift in Sources */,
 				AAE378112B11B93A000336DA /* ContentView.swift in Sources */,
+				10DCB28A2B1288950006C2F9 /* CookieAPI.swift in Sources */,
 				AAE3780F2B11B93A000336DA /* Cookie_SwiftUIApp.swift in Sources */,
+				10DCB2912B128BF20006C2F9 /* ResponseModel.swift in Sources */,
 				10CB50982B11D41A007BFD46 /* LobbyMakeView.swift in Sources */,
 				10CB50962B11D402007BFD46 /* EnterView.swift in Sources */,
 			);
@@ -479,6 +514,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		10DCB28B2B128BA50006C2F9 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
 		AAE3781C2B11B9E9000336DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -490,6 +533,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		10DCB28C2B128BA50006C2F9 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10DCB28B2B128BA50006C2F9 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		10DCB28E2B128BA50006C2F9 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10DCB28B2B128BA50006C2F9 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
 		AAE3781D2B11B9E9000336DA /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AAE3781C2B11B9E9000336DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
