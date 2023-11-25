@@ -11,6 +11,7 @@ import Combine
 struct EnterView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var code: [String] = Array(repeating: "", count: 4)
+    @State private var hasUserInteracted = false 
 
     var isCodeComplete: Bool {
         return code.allSatisfy { !$0.isEmpty }
@@ -19,16 +20,18 @@ struct EnterView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Image("Magicwand")
+                
                 Text("참여코드 입력")
                     .font(
                         Font.system(size: 24)
                             .weight(.semibold)
                     )
                     .foregroundColor(.black)
-                    .padding(.top, 20)
-                    .padding(.bottom, 30)
+                    .padding(.top, 10)
+                    .padding(.bottom, 10)
                 
-                if !isCodeComplete {
+                if hasUserInteracted && !isCodeComplete {
                     Text("* 참여코드를 찾을 수 없어요. 오타가 없는지 확인해주세요!")
                         .font(
                             Font.system(size: 11)
@@ -46,9 +49,10 @@ struct EnterView: View {
                             set: { newValue in
                                 let filtered = newValue.filter { $0.isLetter || $0.isNumber }
                                 code[index] = String(filtered.prefix(1))
+                                hasUserInteracted = true
                             }
                         ))
-                        .textFieldStyle(CodeTextFieldStyle())
+                        .textFieldStyle(CodeTextFieldStyle(hasError: !isCodeComplete, hasUserInteracted: hasUserInteracted))
                         .multilineTextAlignment(.center)
                         .onReceive(Just(code[index])) { _ in
                             if code[index].count > 1 {
@@ -100,6 +104,9 @@ struct EnterView: View {
 }
 
 struct CodeTextFieldStyle: TextFieldStyle {
+    var hasError: Bool
+    var hasUserInteracted: Bool
+    
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
             .padding()
@@ -110,7 +117,7 @@ struct CodeTextFieldStyle: TextFieldStyle {
             .overlay(
                 RoundedRectangle(cornerRadius: 20)
                     .inset(by: 0.5)
-                    .stroke(Color.white, lineWidth: 1)
+                    .stroke(hasError && hasUserInteracted ? Color.red : Color.white, lineWidth: 1)
             )
     }
 }
