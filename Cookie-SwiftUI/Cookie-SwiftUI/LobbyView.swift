@@ -58,7 +58,7 @@ struct NoRoomView: View {
     var body: some View {
         VStack {
             HStack {
-                NavigationLink(destination: LobbyMakeView()) {
+                NavigationLink(destination: EnterView()) {
                     HStack {
                         Image("plus-circle")
                             .padding(.leading, 15)
@@ -78,7 +78,7 @@ struct NoRoomView: View {
                     .shadow(color: Color(red: 0.34, green: 0.17, blue: 0.17).opacity(0.25), radius: 5, x: 0, y: 2)
                 }
                 
-                NavigationLink(destination: EnterView()) {
+                NavigationLink(destination: LobbyMakeView()) {
                     Image("cookie")
                         .foregroundColor(.clear)
                         .frame(width: 80, height: 91)
