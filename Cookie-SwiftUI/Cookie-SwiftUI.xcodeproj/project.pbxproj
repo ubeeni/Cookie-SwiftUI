@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10CB508E2B11C98F007BFD46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10CB508D2B11C98F007BFD46 /* GoogleService-Info.plist */; };
+		10CB50902B11D356007BFD46 /* UserSettingVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB508F2B11D356007BFD46 /* UserSettingVIew.swift */; };
+		10CB50922B11D398007BFD46 /* LobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB50912B11D398007BFD46 /* LobbyView.swift */; };
+		10CB50942B11D3E1007BFD46 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB50932B11D3E1007BFD46 /* ShareView.swift */; };
+		10CB50962B11D402007BFD46 /* EnterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB50952B11D402007BFD46 /* EnterView.swift */; };
+		10CB50982B11D41A007BFD46 /* LobbyMakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB50972B11D41A007BFD46 /* LobbyMakeView.swift */; };
 		AAE3780F2B11B93A000336DA /* Cookie_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE3780E2B11B93A000336DA /* Cookie_SwiftUIApp.swift */; };
 		AAE378112B11B93A000336DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE378102B11B93A000336DA /* ContentView.swift */; };
 		AAE378132B11B93C000336DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE378122B11B93C000336DA /* Assets.xcassets */; };
@@ -16,7 +22,6 @@
 		AAE378222B11B9E9000336DA /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AAE378212B11B9E9000336DA /* FirebaseAnalyticsSwift */; };
 		AAE378242B11B9E9000336DA /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = AAE378232B11B9E9000336DA /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		AAE378262B11B9E9000336DA /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = AAE378252B11B9E9000336DA /* FirebaseAppCheck */; };
-		AAE3782A2B11C391000336DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE378292B11C391000336DA /* GoogleService-Info.plist */; };
 		AAE3782C2B11C732000336DA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AAE3782B2B11C732000336DA /* FirebaseAnalytics */; };
 		AAE3782E2B11C732000336DA /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = AAE3782D2B11C732000336DA /* FirebaseAnalyticsOnDeviceConversion */; };
 		AAE378302B11C732000336DA /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AAE3782F2B11C732000336DA /* FirebaseAnalyticsSwift */; };
@@ -47,12 +52,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10CB508D2B11C98F007BFD46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		10CB508F2B11D356007BFD46 /* UserSettingVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingVIew.swift; sourceTree = "<group>"; };
+		10CB50912B11D398007BFD46 /* LobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyView.swift; sourceTree = "<group>"; };
+		10CB50932B11D3E1007BFD46 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		10CB50952B11D402007BFD46 /* EnterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterView.swift; sourceTree = "<group>"; };
+		10CB50972B11D41A007BFD46 /* LobbyMakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyMakeView.swift; sourceTree = "<group>"; };
 		AAE3780B2B11B93A000336DA /* Cookie-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cookie-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE3780E2B11B93A000336DA /* Cookie_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookie_SwiftUIApp.swift; sourceTree = "<group>"; };
 		AAE378102B11B93A000336DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAE378122B11B93C000336DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAE378152B11B93C000336DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AAE378292B11C391000336DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Library/Mobile Documents/.Trash/Cookie-SwiftUI 14.08.20/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +129,12 @@
 			children = (
 				AAE3780E2B11B93A000336DA /* Cookie_SwiftUIApp.swift */,
 				AAE378102B11B93A000336DA /* ContentView.swift */,
-				AAE378292B11C391000336DA /* GoogleService-Info.plist */,
+				10CB50912B11D398007BFD46 /* LobbyView.swift */,
+				10CB50972B11D41A007BFD46 /* LobbyMakeView.swift */,
+				10CB50932B11D3E1007BFD46 /* ShareView.swift */,
+				10CB50952B11D402007BFD46 /* EnterView.swift */,
+				10CB508F2B11D356007BFD46 /* UserSettingVIew.swift */,
+				10CB508D2B11C98F007BFD46 /* GoogleService-Info.plist */,
 				AAE378122B11B93C000336DA /* Assets.xcassets */,
 				AAE378142B11B93C000336DA /* Preview Content */,
 			);
@@ -230,8 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAE378162B11B93C000336DA /* Preview Assets.xcassets in Resources */,
+				10CB508E2B11C98F007BFD46 /* GoogleService-Info.plist in Resources */,
 				AAE378132B11B93C000336DA /* Assets.xcassets in Resources */,
-				AAE3782A2B11C391000336DA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,8 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10CB50942B11D3E1007BFD46 /* ShareView.swift in Sources */,
+				10CB50902B11D356007BFD46 /* UserSettingVIew.swift in Sources */,
+				10CB50922B11D398007BFD46 /* LobbyView.swift in Sources */,
 				AAE378112B11B93A000336DA /* ContentView.swift in Sources */,
 				AAE3780F2B11B93A000336DA /* Cookie_SwiftUIApp.swift in Sources */,
+				10CB50982B11D41A007BFD46 /* LobbyMakeView.swift in Sources */,
+				10CB50962B11D402007BFD46 /* EnterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
