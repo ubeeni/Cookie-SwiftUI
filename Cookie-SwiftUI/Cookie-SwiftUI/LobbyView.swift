@@ -104,7 +104,7 @@ struct NoRoomView: View {
                     .foregroundColor(Color(red: 0.6, green: 0.6, blue: 0.6))
             }
             .padding(.top, 15)
-            .padding(.leading, 25)
+            .padding(.leading, 30)
             .frame(maxWidth: .infinity, alignment: .leading)
             
             Text("아직 열어본 쿠키박스가 없어요!")
@@ -114,7 +114,7 @@ struct NoRoomView: View {
                 )
                 .foregroundColor(Color(red: 0.31, green: 0.31, blue: 0.31))
                 .padding(.top, 10)
-                .padding(.leading, 25)
+                .padding(.leading, 30)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             Text("초대코드를 입력해 쿠키박스에 JOIN하세요")
@@ -122,7 +122,7 @@ struct NoRoomView: View {
                     Font.system(size: 16)
                 )
                 .foregroundColor(Color(red: 0.6, green: 0.6, blue: 0.6))
-                .padding(.leading, 25)
+                .padding(.leading, 30)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             Image("join-cookie")
@@ -141,7 +141,7 @@ struct NoRoomView: View {
                     )
                     .foregroundColor(Color(red: 0.6, green: 0.6, blue: 0.6))
             }
-            .padding(.leading, 25)
+            .padding(.leading, 30)
             .frame(maxWidth: .infinity, alignment: .leading)
             
             Text("아직 만들어 본 쿠키박스가 없어요!")
@@ -151,7 +151,7 @@ struct NoRoomView: View {
                 )
                 .foregroundColor(Color(red: 0.31, green: 0.31, blue: 0.31))
                 .padding(.top, 10)
-                .padding(.leading, 25)
+                .padding(.leading, 30)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             Text("쿠키박스의 호스트가 되어보세요")
@@ -159,7 +159,7 @@ struct NoRoomView: View {
                     Font.system(size: 16)
                 )
                 .foregroundColor(Color(red: 0.6, green: 0.6, blue: 0.6))
-                .padding(.leading, 25)
+                .padding(.leading, 30)
                 .frame(maxWidth: .infinity, alignment: .leading)
             
             Image("host-cookie")
