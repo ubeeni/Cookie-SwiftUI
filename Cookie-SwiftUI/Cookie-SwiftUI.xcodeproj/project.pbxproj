@@ -16,6 +16,7 @@
 		AAE378222B11B9E9000336DA /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AAE378212B11B9E9000336DA /* FirebaseAnalyticsSwift */; };
 		AAE378242B11B9E9000336DA /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = AAE378232B11B9E9000336DA /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		AAE378262B11B9E9000336DA /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = AAE378252B11B9E9000336DA /* FirebaseAppCheck */; };
+		AAE3782A2B11C391000336DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE378292B11C391000336DA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AAE378102B11B93A000336DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAE378122B11B93C000336DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAE378152B11B93C000336DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAE378292B11C391000336DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Library/Mobile Documents/.Trash/Cookie-SwiftUI 14.08.20/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				AAE3780E2B11B93A000336DA /* Cookie_SwiftUIApp.swift */,
 				AAE378102B11B93A000336DA /* ContentView.swift */,
+				AAE378292B11C391000336DA /* GoogleService-Info.plist */,
 				AAE378122B11B93C000336DA /* Assets.xcassets */,
 				AAE378142B11B93C000336DA /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 			files = (
 				AAE378162B11B93C000336DA /* Preview Assets.xcassets in Resources */,
 				AAE378132B11B93C000336DA /* Assets.xcassets in Resources */,
+				AAE3782A2B11C391000336DA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
