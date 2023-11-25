@@ -50,6 +50,7 @@
 		AAE3785E2B11C732000336DA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AAE3785D2B11C732000336DA /* FirebaseStorage */; };
 		AAE378602B11C732000336DA /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = AAE3785F2B11C732000336DA /* FirebaseStorageCombine-Community */; };
 		AAE378622B11DBA8000336DA /* UserSettingEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE378612B11DBA8000336DA /* UserSettingEditView.swift */; };
+		AAED7F522B1258E7000B0465 /* InviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAED7F512B1258E7000B0465 /* InviteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		AAE378122B11B93C000336DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAE378152B11B93C000336DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AAE378612B11DBA8000336DA /* UserSettingEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingEditView.swift; sourceTree = "<group>"; };
+		AAED7F512B1258E7000B0465 /* InviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				10CB50912B11D398007BFD46 /* LobbyView.swift */,
 				10CB50972B11D41A007BFD46 /* LobbyMakeView.swift */,
 				10CB50952B11D402007BFD46 /* EnterView.swift */,
+				AAED7F512B1258E7000B0465 /* InviteView.swift */,
 				10CB50932B11D3E1007BFD46 /* ThreadView.swift */,
 				10CB508F2B11D356007BFD46 /* UserSettingVIew.swift */,
 				AAE378612B11DBA8000336DA /* UserSettingEditView.swift */,
@@ -264,6 +267,7 @@
 				10CB50902B11D356007BFD46 /* UserSettingVIew.swift in Sources */,
 				AAE378622B11DBA8000336DA /* UserSettingEditView.swift in Sources */,
 				10CB50922B11D398007BFD46 /* LobbyView.swift in Sources */,
+				AAED7F522B1258E7000B0465 /* InviteView.swift in Sources */,
 				AAE378112B11B93A000336DA /* ContentView.swift in Sources */,
 				AAE3780F2B11B93A000336DA /* Cookie_SwiftUIApp.swift in Sources */,
 				10CB50982B11D41A007BFD46 /* LobbyMakeView.swift in Sources */,

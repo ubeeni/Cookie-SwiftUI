@@ -81,7 +81,7 @@ struct UserSettingView: View {
 struct RoundedRectangleButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         RoundedRectangle(cornerRadius: 15) // 원하는 값으로 조절
-            .fill(configuration.isPressed ? Color.white : Color.gray)
+            .fill(configuration.isPressed ? Color.white : Color(red: 0.98, green: 0.98, blue: 0.98))
             .frame(width: 40, height: 40)
             .overlay(
                 Image(systemName: "chevron.left")

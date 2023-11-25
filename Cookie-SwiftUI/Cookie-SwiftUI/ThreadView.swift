@@ -8,39 +8,105 @@
 import SwiftUI
 
 struct ThreadView: View {
-    @State private var selectedOption = "Option 1"
-    let options = ["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"]
-
     @Environment(\.presentationMode) var presentationMode
-    let items: [String]
-    
     var body: some View {
         NavigationView {
             ZStack() {
-                //배경 이미지
-                VStack() {
-                    //Group 1
-                    
-                }
-                ScrollView {
+                Color(UIColor.gray)
+                    .ignoresSafeArea(.all)
                     VStack() {
                         ZStack() {
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(.white)
-                            
+                                .frame(width: 360, height: 91)
                             RoundedRectangle(cornerRadius: 20)
-                                .fill(.white)
-                                .offset(x: 20)
+                                .fill(.gray)
+                                .frame(width: 80, height: 80)
                         }
                         
+                        Spacer()
+                        HStack() {
+                            ZStack() {
+                                Rectangle()
+                                    .frame(width: 1, height: nil, alignment: .center)
+                                    .foregroundStyle(Color.black)
+                                Circle()
+                                    .fill(.gray)
+                                    .frame(width: 10)
+                            }
+                            .padding(.leading, 20)
                             
-                    }
-                    VStack() {
-                        
-                    }
-                    VStack() {
-                        
-                    }
+                            ScrollView {
+                                VStack() {
+                                    ZStack() {
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .fill(.white)
+                                            .frame(width: 320)
+                                        
+                                        VStack() {
+                                            RoundedRectangle(cornerRadius: 20)
+                                                .fill(.gray)
+                                                .frame(width: 260, height: 200)
+                                                .padding(.top, 10)
+                                            HStack() {
+                                                Text("time")
+                                                Spacer()
+                                                Image(systemName: "square.and.pencil")
+                                            }
+                                            .padding(.top, 10)
+                                            HStack() {
+                                                Text("소제목")
+                                                Text("작성자")
+                                            }
+                                            Text("내용")
+                                            HStack() {
+                                                Text("내용")
+                                                Spacer()
+                                                Text("리플")
+                                            }
+                                            
+                                        }
+                                        .frame(width: 260)
+                                        
+                                    }
+                                    VStack{
+                                        ZStack {
+                                            RoundedRectangle(cornerRadius: 20)
+                                                .fill(Color.white)
+                                                .frame(width: 320, height: 160)
+                                            VStack {
+                                                Spacer()
+                                                
+                                                Text("가가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사나다라마바사")
+                                                    .font(.system(size: 16))
+                                                    .multilineTextAlignment(.leading)
+                                                    .lineSpacing(3)
+                                                    .padding(35)
+                                                    .frame(width: 320, height: nil)
+                                                    .fixedSize(horizontal: false, vertical: true)
+                                                HStack() {
+                                                    Text("time")
+                                                    Spacer()
+                                                    Image(systemName: "square.and.pencil")
+                                                }
+                                                .padding(.top, 10)
+                                                HStack() {
+                                                    Text("소제목")
+                                                    Text("작성자")
+                                                }
+                                                Text("내용")
+                                                HStack() {
+                                                    Text("내용")
+                                                    Spacer()
+                                                    Text("리플")
+                                                }
+                                                Spacer()
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                 }
             }
         }
@@ -48,22 +114,23 @@ struct ThreadView: View {
         .navigationBarItems(
             leading: HStack {
                 Button(action: {
-                        presentationMode.wrappedValue.dismiss()
+                    presentationMode.wrappedValue.dismiss()
                 }) {
                 }
                 .buttonStyle(RoundedRectangleButtonStyle())
             },
             trailing: HStack {
                 Button(action: {
-                        
+                    
                 }) {
                     NavigationLink(destination: UserSettingView()) {
-
+                        
                     }
                 }
                 .buttonStyle(RoundedRectanglePlusButtonStyle())
             }
         )
+        
     }
 }
 
