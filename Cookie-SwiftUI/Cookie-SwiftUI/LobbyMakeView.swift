@@ -10,9 +10,10 @@ import SwiftUI
 struct LobbyMakeView: View {
     @State private var title: String = ""
     @State private var subtitle: String = ""
+    @State private var place: String = ""
     @State private var openPhoto = false
-    @State private var uiImage: UIImage? = UIImage(systemName: "person.crop.circle.fill")
-    
+    @State private var uiImage: UIImage? = UIImage(systemName: " ")
+
     var body: some View {
         VStack {
             Text("그룹 만들기")
@@ -21,35 +22,68 @@ struct LobbyMakeView: View {
                         .weight(.semibold)
                 )
                 .foregroundColor(.black)
-            
-            Image(uiImage: uiImage ?? UIImage(systemName: "person.crop.circle.fill")!)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 100)
-                .clipShape(Circle())
-                .onTapGesture {
-                    self.openPhoto = true
+
+            ZStack {
+                Rectangle()
+                    .foregroundColor(.clear)
+                    .frame(width: 380, height: 538)
+                    .cornerRadius(40)
+                    .shadow(color: Color(red: 0.34, green: 0.17, blue: 0.17).opacity(0.25), radius: 5, x: 0, y: 2)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 40)
+                            .inset(by: 0.5)
+                            .stroke(Color(red: 0.6, green: 0.6, blue: 0.6).opacity(0.6), lineWidth: 1)
+                    )
+
+                VStack {
+                    ZStack {
+                        Rectangle()
+                            .foregroundColor(Color(red: 0.85, green: 0.85, blue: 0.85))
+                            .frame(width: 352, height: 309)
+                            .cornerRadius(40)
+                            .shadow(color: Color(red: 0.34, green: 0.17, blue: 0.17).opacity(0.25), radius: 5, x: 0, y: 2)
+
+                        if let selectedImage = uiImage {
+                            Image(uiImage: selectedImage)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 352, height: 309)
+                                .clipShape(Circle())
+                        }
+
+                        Button(action: {
+                            self.openPhoto = true
+                        }) {
+                            Image("plus")
+                        }
+                        .sheet(isPresented: $openPhoto) {
+                            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$uiImage, uiImage: self.$uiImage)
+                        }
+                    }
+
+                    HStack {
+                        VStack {
+                            TextField("그룹 이름", text: $title)
+                                .padding()
+                                .font(
+                                    Font.system(size: 24)
+                                        .weight(.semibold)
+                                )
+                            TextField("부제목", text: $subtitle)
+                                .padding()
+                                .font(
+                                    Font.system(size: 20)
+                                        .weight(.semibold)
+                                )
+                        }
+                    }
+                    .padding(.top, 50)
+                    .padding(.bottom, 10)
                 }
-                .sheet(isPresented: $openPhoto) {
-                    ImagePicker(sourceType: .photoLibrary, selectedImage: self.$uiImage, uiImage: self.$uiImage)
-                } .padding(.vertical, 10)
-            
-            TextField("제목", text: $title)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(8)
-                .padding(.horizontal)
-            
-            TextField("부제목", text: $subtitle)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(8)
-                .padding(.horizontal)
-            
-            Spacer()
-            
+            }
+
             Button("만들기") {
-                
+
             }
             .font(
                 Font.system(size: 20)
@@ -61,11 +95,10 @@ struct LobbyMakeView: View {
             .cornerRadius(20)
             .shadow(color: .black.opacity(0.25), radius: 5, x: 0, y: 2)
             .padding(.bottom, 20)
+            .padding(.top, 20)
         }
-        .padding(.top, 20)
     }
 }
-
 struct ImagePicker: UIViewControllerRepresentable {
     var sourceType: UIImagePickerController.SourceType = .photoLibrary
     
