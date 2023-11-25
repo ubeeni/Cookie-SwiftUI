@@ -187,7 +187,7 @@ struct LobbyMakeView: View {
                 Button(action: {
                     
                 }) {
-                    NavigationLink(destination: UserSettingView()) {
+                    NavigationLink(destination: UserSettingView(toggleManager: ToggleManager())) {
                         Image(systemName: "person.crop.circle")
                             .resizable()
                             .frame(width: 30, height: 30)

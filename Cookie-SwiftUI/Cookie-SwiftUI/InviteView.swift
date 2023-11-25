@@ -13,7 +13,6 @@ struct InviteView: View {
         
         NavigationView {
             VStack() {
-                
                 Rectangle()
                     .foregroundColor(.clear)
                     .frame(width: 40, height: 40)
@@ -143,36 +142,35 @@ struct InviteView: View {
                             .shadow(color: Color(red: 0.34, green: 0.17, blue: 0.17).opacity(0.25), radius: 5, x: 0, y: 2)
                         HStack() {
                             Rectangle()
-                              .foregroundColor(.clear)
-                              .frame(width: 40, height: 40)
-                              .background(
-                                Image("star")
-                                  .resizable()
-                                  .aspectRatio(contentMode: .fill)
-                                  .frame(width: 40, height: 40)
-                                  .clipped()
-                              )
+                                .foregroundColor(.clear)
+                                .frame(width: 40, height: 40)
+                                .background(
+                                    Image("star")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 40, height: 40)
+                                        .clipped()
+                                )
                             
                             Text("오픈")
                                 .foregroundStyle(Color.white)
                                 .font(.system(size: 20, weight: .bold))
                             Rectangle()
-                              .foregroundColor(.clear)
-                              .frame(width: 40, height: 40)
-                              .background(
-                                Image("star")
-                                  .resizable()
-                                  .aspectRatio(contentMode: .fill)
-                                  .frame(width: 40, height: 40)
-                                  .clipped()
-                              )
+                                .foregroundColor(.clear)
+                                .frame(width: 40, height: 40)
+                                .background(
+                                    Image("star")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 40, height: 40)
+                                        .clipped()
+                                )
                         }
                     }
                     .padding(.top, 15)
                 }
             }
             .background(Image("background")
-                .resizable()
                 .aspectRatio(contentMode: .fill)
                 .ignoresSafeArea())
             
@@ -190,7 +188,7 @@ struct InviteView: View {
                 Button(action: {
                     
                 }) {
-                    NavigationLink(destination: UserSettingView()) {
+                    NavigationLink(destination: UserSettingView(toggleManager: ToggleManager())) {
                         
                     }
                 }

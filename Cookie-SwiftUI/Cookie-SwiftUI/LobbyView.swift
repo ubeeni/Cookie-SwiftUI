@@ -21,7 +21,7 @@ struct LobbyView: View {
                     .foregroundColor(Color(red: 0.21, green: 0.07, blue: 0.07))
                     .padding(.leading, 30)
                 Spacer()
-                NavigationLink(destination: UserSettingView()) {
+                NavigationLink(destination: UserSettingView(toggleManager: ToggleManager())) {
                     Image(systemName: "person.crop.circle")
                         .resizable()
                         .frame(width: 30, height: 30)
