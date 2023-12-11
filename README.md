@@ -14,7 +14,7 @@
 | ------------ | ------------ | ------------ | ------------ |
 |![MAIN M](https://github.com/ubeeni/Cookie-SwiftUI/assets/69234788/b309ff4b-d5a8-43aa-9c76-6d94f67cc9de) | ![MAIN - 만들기](https://github.com/ubeeni/Cookie-SwiftUI/assets/69234788/58b44bbc-e8e8-476e-a9dd-8526a16b4dfe) | ![스레드](https://github.com/ubeeni/Cookie-SwiftUI/assets/69234788/07327ed1-bce4-45f8-8416-fb2f43c18830) | ![스레드-다크모드](https://github.com/ubeeni/Cookie-SwiftUI/assets/69234788/7ee68ae7-a661-47c4-b0a3-5add8a108848) |
 
-| 초대장(그룹 참여) | 초대장(그룹 참여) - 다크모드 | JOIN하기 - 참여코드 입력 과정 | JOIN하기 - 참여코드 입력 성공 |
+| 초대장(그룹 참여) | 초대장 - 다크모드 | JOIN하기 - 참여코드 입력 | 참여코드 입력 성공 |
 | ------------ | ------------ | ------------ | ------------ |
 | ![그룹 참여1](https://github.com/ubeeni/Cookie-SwiftUI/assets/69234788/abd66a93-f4e9-4264-89b0-b34b3cb3ef2a) | ![그룹 참여](https://github.com/ubeeni/Cookie-SwiftUI/assets/69234788/773b9377-8b1d-4db9-954e-60f3751ab1de) | ![참여코드 입력1](https://github.com/ubeeni/Cookie-SwiftUI/assets/69234788/c4f79d38-df8e-4790-94d4-4fa4c5028220) | ![참여코드 입력](https://github.com/ubeeni/Cookie-SwiftUI/assets/69234788/f33bb715-1842-4f1e-9054-2d069e000032) |
 
